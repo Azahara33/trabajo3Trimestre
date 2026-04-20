@@ -1,0 +1,216 @@
+**Preguntas tipo test - PHP Básico (Variables, Listas, Sesiones, Cookies, Excepciones, Formularios)**
+
+1. ¿Cuál es la forma correcta de declarar una variable en PHP?
+a) $variable = "valor";
+b) variable = "valor";
+c) var variable = "valor";
+d) declare variable = "valor";
+
+2. ¿Qué tipo de dato sería la variable $num = "25"; por defecto en PHP?
+a) Integer
+b) Boolean
+c) Float
+d) String
+
+3. ¿Cuál es la función principal para mostrar texto en PHP?
+a) print()
+b) console.log()
+c) display()
+d) write()
+
+4. Para concatenar dos cadenas de texto en PHP se utiliza:
+a) El signo +
+b) El operador .
+c) El operador &
+d) El operador ,
+
+5. ¿Cuál es la forma correcta de crear un array indexado en PHP?
+a) $array = array("manzana", "naranja");
+b) $array = ["manzana", "naranja"];
+c) $array = new Array("manzana", "naranja");
+d) Las opciones a y b son correctas.
+
+6. ¿Cómo se accede al segundo elemento del array $frutas = array("manzana", "plátano", "cereza");?
+a) $frutas[0]
+b) $frutas[1]
+c) $frutas[2]
+d) $frutas[second]
+
+7. ¿Qué función se utiliza para añadir un elemento al final de un array?
+a) array_push()
+b) array_add()
+c) array_insert()
+d) array_pop()
+
+8. Para iniciar el uso de variables de sesión en PHP, ¿qué función se debe llamar al principio del script?
+a) session_begin()
+b) start_session()
+c) session_start()
+d) init_session()
+
+9. ¿Cómo se almacena un valor en una variable de sesión? Por ejemplo, para guardar el nombre de usuario.
+a) $_SESSION = "usuario";
+b) $_SESSION['usuario'] = "Juan";
+c) SESSION['usuario'] = "Juan";
+d) session_save("usuario", "Juan");
+
+10. ¿Dónde se almacenan normalmente las variables de sesión en el servidor?
+a) En la base de datos.
+b) En archivos temporales en el servidor.
+c) En la memoria RAM del cliente.
+d) En cookies encriptadas.
+
+11. Para destruir todos los datos registrados en una sesión, ¿qué función se utiliza?
+a) session_delete()
+b) session_clean()
+c) session_destroy()
+d) session_unset()
+
+12. ¿Para qué se utiliza principalmente la función setcookie()?
+a) Para leer un valor de una cookie.
+b) Para crear o modificar una cookie en el cliente.
+c) Para eliminar una variable de sesión.
+d) Para enviar un formulario.
+
+13. ¿Cuál es la forma correcta de crear una cookie que expire en 1 hora?
+a) setcookie("usuario", "Juan", time() + 3600);
+b) setcookie("usuario", "Juan", 3600);
+c) create_cookie("usuario", "Juan", 1);
+d) setcookie("usuario", "Juan", time() + 60);
+
+14. ¿En qué array superglobal de PHP se almacenan las cookies recibidas del cliente?
+a) $_GET
+b) $_POST
+c) $_REQUEST
+d) $_COOKIE
+
+15. Para eliminar una cookie inmediatamente, ¿qué se debe hacer?
+a) Usar deletecookie("nombre").
+b) Establecer su tiempo de expiración a una fecha pasada, ej: time() - 3600.
+c) No se pueden eliminar, solo expiran.
+d) Usar unset($_COOKIE['nombre']);.
+
+16. ¿Qué bloque de código se utiliza en PHP para manejar excepciones y evitar que el script se detenga por un error?
+a) try...catch
+b) if...else
+c) error...handle
+d) exception...resolve
+
+17. ¿Qué palabra clave se utiliza dentro del bloque `try` para lanzar una excepción manualmente?
+a) throw
+b) exception
+c) trigger
+d) raise
+
+18. ¿Cuál es el método principal para obtener datos enviados por un formulario con método POST?
+a) A través de la variable $_GET.
+b) A través de la variable $_POST.
+c) A través de la variable $REQUEST.
+d) A través de la función get_post_data().
+
+19. Si un formulario HTML tiene un campo <input type="text" name="email">, ¿cómo se accede a su valor en PHP tras enviarlo por POST?
+a) $_POST['email']
+b) $_POST['input']
+c) $_POST['text']
+d) $_GET['email']
+
+20. ¿Qué hace la función htmlspecialchars() cuando se procesan datos de un formulario?
+a) Convierte caracteres especiales en entidades HTML (ej: & se convierte en &amp;).
+b) Valida que el dato sea un email.
+c) Encripta la contraseña.
+d) Convierte todo el texto a mayúsculas.
+
+21. Para verificar si un formulario fue enviado con el método POST, se suele comprobar:
+a) if ($_SERVER['REQUEST_METHOD'] == 'POST') { ... }
+b) if (isset($_GET['submit'])) { ... }
+c) if (form_submitted()) { ... }
+d) if ($_POST['submit'] == true) { ... }
+
+22. ¿Qué función se utiliza para redirigir al usuario a otra página en PHP?
+a) redirect()
+b) location()
+c) header("Location: pagina.php")
+d) goto()
+
+23. ¿Cuál es la forma correcta de declarar una constante en PHP?
+a) constant PI = 3.1416;
+b) define("PI", 3.1416);
+c) $const PI = 3.1416;
+d) const PI = 3.1416; (Dentro de una clase, desde PHP 7 también fuera con define)
+
+24. ¿Cómo se cuenta el número de elementos en un array?
+a) count($array)
+b) $array->length()
+c) sizeof($array)
+d) Las opciones a y c son correctas.
+
+25. Para verificar si una variable de sesión 'id_usuario' está definida, se usa:
+a) if (isset($_SESSION['id_usuario'])) { ... }
+b) if ($_SESSION['id_usuario'] != null) { ... }
+c) if (exists($_SESSION['id_usuario'])) { ... }
+d) if (session_is_set('id_usuario')) { ... }
+
+26. ¿Cómo se elimina una sola variable de sesión, por ejemplo 'usuario'?
+a) delete $_SESSION['usuario'];
+b) session_unset('usuario');
+c) unset($_SESSION['usuario']);
+d) $_SESSION['usuario'] = null;
+
+27. ¿Qué función se usa para enviar un correo electrónico desde PHP?
+a) sendmail()
+b) mail()
+c) email()
+d) smtp()
+
+28. ¿Cuál es el ámbito por defecto de una variable definida dentro de una función en PHP?
+a) Global.
+b) Local a esa función.
+c) Superglobal.
+d) Estático.
+
+29. Para recorrer todos los elementos de un array asociativo (clave => valor), se utiliza frecuentemente:
+a) Un bucle for.
+b) Un bucle while.
+c) Un bucle foreach.
+d) Un bucle do...while.
+
+30. ¿Qué hace la función empty() aplicada a una variable?
+a) Comprueba si la variable está declarada.
+b) Comprueba si la variable contiene un valor distinto de cero.
+c) Comprueba si la variable está vacía (string vacío, 0, null, false, array vacío...).
+d) Comprueba si el valor es un string.
+
+---
+
+**SOLUCIONES:**
+
+1. a) $variable = "valor";
+2. d) String
+3. a) print() (también es válido echo, pero en las opciones solo está print)
+4. b) El operador .
+5. d) Las opciones a y b son correctas.
+6. b) $frutas[1]
+7. a) array_push()
+8. c) session_start()
+9. b) $_SESSION['usuario'] = "Juan";
+10. b) En archivos temporales en el servidor.
+11. c) session_destroy()
+12. b) Para crear o modificar una cookie en el cliente.
+13. a) setcookie("usuario", "Juan", time() + 3600);
+14. d) $_COOKIE
+15. b) Establecer su tiempo de expiración a una fecha pasada, ej: time() - 3600.
+16. a) try...catch
+17. a) throw
+18. b) A través de la variable $_POST.
+19. a) $_POST['email']
+20. a) Convierte caracteres especiales en entidades HTML (ej: & se convierte en &amp;).
+21. a) if ($_SERVER['REQUEST_METHOD'] == 'POST') { ... }
+22. c) header("Location: pagina.php")
+23. b) define("PI", 3.1416);
+24. d) Las opciones a y c son correctas.
+25. a) if (isset($_SESSION['id_usuario'])) { ... }
+26. c) unset($_SESSION['usuario'])
+27. b) mail()
+28. b) Local a esa función.
+29. c) Un bucle foreach.
+30. c) Comprueba si la variable está vacía (string vacío, 0, null, false, array vacío...).
