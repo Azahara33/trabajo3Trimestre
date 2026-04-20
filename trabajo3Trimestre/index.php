@@ -26,6 +26,9 @@ if (isset($_SESSION["nombre"])&&$_SESSION["nombre"]!=="") {
             <div class="salirSesion col-6 border border-primary"><nav><a href="logout.php" class="">Salir</a></nav></div>
             
         </div>
+        <div class="creacionCard mb-3 border border-primary">
+            <nav><a href="creacionCard.php" class="btn  btn-secondary"> Crear Evento</a></nav>
+        </div>
        
         <div class="contenedor_Card">
             <?php include 'includes/card.php'?>
