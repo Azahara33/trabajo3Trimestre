@@ -71,6 +71,7 @@ session_start();
             <button type="submit" class="btn btn-secondary mb-2 ">Entrar</button>
             </form>
         </div>
+        <nav><a href="registro.php">¿Estás registrado?</a></nav>
 
     </div>
 </body>

@@ -58,6 +58,7 @@ if (!file_exists($registroNombre)) {
             <button type="submit" class="btn btn-secondary mb-2 ">Registrarse</button>
             </form>
         </div>
+        <nav><a href="login.php">¿Ir a login?</a></nav>
 
     </div>
 </body>
