@@ -34,7 +34,7 @@ if (!$resultado) {
                 
                     <a href="modificacionCard.php?id=<?php echo $registro['id'];?>" ><i class="bi bi-pencil btn btn-warning fs-4 mb-2"></i></a>
                 
-                <i class="bi bi-trash3 btn btn-danger fs-4"></i>
+                    <a href="eliminar.php?id=<?php echo $registro['id'];?>"> <i class="bi bi-trash3 btn btn-danger fs-4"></i></a>
             </div>
 
         </div>
