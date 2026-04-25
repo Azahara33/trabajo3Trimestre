@@ -15,7 +15,8 @@ if (!file_exists($registroNombre)) {
         }else{
         $fich= fopen($registroNombre, "a");
         fputs($fich,$nombre.":".$contrasena.PHP_EOL);
-        echo "Registró el usuario con éxito";
+        echo " Se registró el usuario con éxito";
+        header("Location:login.php");
         fclose($fich);
         }
         
